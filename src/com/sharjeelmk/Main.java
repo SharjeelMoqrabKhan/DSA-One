@@ -1,10 +1,9 @@
 package com.sharjeelmk;
-
-import com.sharjeelmk.bitManipulation.BitManipulation;
+import com.sharjeelmk.bitManipulation.BitMasking;
 
 public class Main {
 
     public static void main(String[] args) {
-        BitManipulation.swapTwoNumber(5,6);
+        System.out.println(BitMasking.getBit(8,3));
     }
 }
