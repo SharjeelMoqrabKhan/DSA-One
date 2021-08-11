@@ -21,4 +21,14 @@ public class BitMasking {
     public static boolean setBit(int n, int i){
         return ((n|(1<<i))!=0);
     }
+    /** Clear the ith bit means  that unset the ith bit suppose we
+     * 12->1100 and we want to unset it's 3bit which set for that we
+     * have to take first mask as usual we do 1<<i and we make it inverse
+     * that makes set bit to unset and last we take AND for number and inverted mask
+     * that clear the ith-bit.
+     * */
+    public static int clearBit(int n, int i){
+        int mask= (~(1<<i));
+        return (n&mask);
+    }
 }
