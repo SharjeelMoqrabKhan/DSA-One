@@ -11,4 +11,14 @@ public class BitMasking {
     public static boolean getBit(int n,int i){
         return ((n&(1<<i))!=0);
     }
+
+    /** set the ith bit set means make bit 1 if it's 0
+     * for that we if we have number 8-> 1000 and its zero's bit unset
+     * and we want to set it we have mask it 1<<i and then OR with number
+     * suppose we want to set zero's bit
+     * num | 1<<i != 0 means set
+     * */
+    public static boolean setBit(int n, int i){
+        return ((n|(1<<i))!=0);
+    }
 }
