@@ -1,11 +1,10 @@
 package com.sharjeelmk;
-import com.sharjeelmk.bitManipulation.BitMasking;
+import com.sharjeelmk.bitManipulation.Xor;
 
 public class Main {
 
     public static void main(String[] args) {
-        //System.out.println(BitMasking.getBit(8,3));
-        //System.out.println(BitMasking.setBit(8,1));
-        System.out.println(BitMasking.clearBit(12,2));
+    int [] arr = {1,1,33,2,33,44,11,44,11};
+        System.out.println(Xor.nonRepeatingElement1(arr));
     }
 }

@@ -112,3 +112,20 @@ same numbers become zero remaing get non zero number
 3) Now divide the elements in two sets and do xor of         
    elements in each set and we get the non-repeating 
    elements 7 and 9. Please see the implementation for this step.
+   
+   # Find the non one repating element in array while other repeating twice
+   0^N=N
+   N^N=0
+   ```
+   int res = 0;
+           for (int j : arr) {
+               res = res ^ j;
+           }
+       return res;
+       }
+   ```
+   As we know that if two numbers are same their XOR Zero 101^101=000
+   0 XOR Number = Number eg  0^101=101
+   
+   so differentElment=5^4^1^4^7^5^1
+   same numbers become zero remaing get non zero number
