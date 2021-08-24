@@ -19,4 +19,24 @@ public class Sorting {
     }
     return arr;
 }
+
+    /* insertion sort is a simple sorting technique that works
+     the way we sort playing cards in our hand, we chose one card
+     and insert it its position (ascending or descending)
+     Worst case O(n^2)
+     */
+
+    public static int [] insertionSort(int [] ar){
+        for(int i=1; i<ar.length; i++){
+            int temp = ar[i];
+            int j = i-1;
+            while (j>=0 && ar[j]>temp){
+                ar[j+1]=ar[j];
+                j--;
+            }
+            ar[j+1]=temp;
+        }
+        return ar;
+    }
+
 }
